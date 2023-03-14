@@ -719,6 +719,59 @@ strong {
 
 
 /*---------------------------------------
+  Education              
+-----------------------------------------*/
+.education-thumb {
+  background: white;
+  border: 2px solid var(--white-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 40px;
+  transition: all ease 0.5s;
+  width: fit-content;
+
+}
+
+.education-thumb:hover {
+  border-color: var(--secondary-color);
+}
+
+.education-thumb:hover .education-image,
+.education-thumb:focus .education-image {
+  transform: rotate(0) translateY(0);
+}
+
+.education-thumb .popup-image {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.education-image {
+  border-radius: var(--border-radius-medium);
+  
+  width: 25%;
+  height: 25%;
+  
+}
+
+.education-title {
+  margin-bottom: 20px;
+}
+
+.education-tag {
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  
+}
+
+/*---------------------------------------
   PROJECTS              
 -----------------------------------------*/
 .projects-thumb {
