@@ -500,6 +500,7 @@ strong {
 
 .hero-text {
   position: relative;
+  overflow: hidden;
   z-index: 22;
   top: 70px;
 }
@@ -507,7 +508,7 @@ strong {
 .hero-image-wrap {
   background: var(--white-color);
   border-radius: 100%;
-  width: 350px;
+  width:20vh;
   height: 350px;
   position: absolute;
   z-index: 22;
@@ -522,7 +523,9 @@ strong {
   position: absolute;
   z-index: 22;
   top: 0;
-  width: 100%;
+  
+  max-width: 100%;
+  
   min-width: 550px;
 }
 
@@ -573,6 +576,7 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
+  height: 80%;
 }
 
 .about-thumb {
@@ -990,12 +994,12 @@ strong {
 
   .hero-image-wrap {
     top: -50px;
-    width: 400px;
+    width:20vh;
     height: 400px;
   }
 
   .hero-image {
-    min-width: 650px;
+    width:20vh;
   }
   
   .hero-title,
@@ -1176,12 +1180,21 @@ strong {
   }
 
   .hero-image-wrap {
-    width: 300px;
+    width:20vh;
     height: 300px;
   }
 
   .hero-image {
     min-width: inherit;
   }
+}
+
+.home-image{
+  height: 55vh;
+  width: 75vh;
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  max-width: 100%;
 }
 
