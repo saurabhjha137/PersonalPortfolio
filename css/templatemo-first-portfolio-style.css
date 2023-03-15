@@ -671,8 +671,8 @@ strong {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 50%;
-  height: 55%;
+  width: fit-content;
+  height: fit-content;
   transform: rotate(-35deg) translateY(55px);
   transition: all ease 0.5s;
 }
@@ -1170,8 +1170,8 @@ strong {
   }
 
   .services-icon-wrap {
-    width: 45%;
-    height: 60%;
+    width: fit-content;
+    height: fit-content;
   }
 
   .services .col-lg-10 .row .col-lg-6:last-child,
