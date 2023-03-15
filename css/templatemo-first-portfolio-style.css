@@ -730,9 +730,8 @@ strong {
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 40px;
+  padding-left: 12vh;
   transition: all ease 0.5s;
-  width: fit-content;
-
 }
 
 .education-thumb:hover {
@@ -753,21 +752,27 @@ strong {
 .education-image {
   border-radius: var(--border-radius-medium);
   
-  width: 25%;
-  height: 25%;
+  width: 10vh;
+  height: 10vh;
+  margin-bottom: 3vh;
+  margin-top: 2vh ;
   
 }
 
 .education-title {
-  margin-bottom: 20px;
+  margin-bottom: 3vh;
+  margin-top: 3vh ;
+  padding-left: 2vh;
+  
 }
 
 .education-tag {
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-medium);
+  
+  font-size: 3vh;
   color: var(--secondary-color);
-  text-transform: uppercase;
-  margin-bottom: 5px;
+  
+  margin-bottom: 3vh;
+  margin-top: 2vh ;
   
 }
 
