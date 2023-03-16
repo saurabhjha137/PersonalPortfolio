@@ -612,12 +612,14 @@ strong {
 -----------------------------------------*/
 
 .clients-item-height {
-	height: 120px;
+	height: 20vh;
+  width: 20vh;
 }
 
 .clients-image {
   display: block;
-  max-width: 100px;
+  max-width: 80px;
+  
   margin: auto;
   transition: all ease 0.2s;
 }
@@ -798,6 +800,7 @@ strong {
 .projects-thumb:hover .projects-image,
 .projects-thumb:focus .projects-image {
   transform: rotate(0) translateY(0);
+  
 }
 
 .projects-thumb .popup-image {
@@ -808,6 +811,7 @@ strong {
 
 .projects-image {
   border-radius: var(--border-radius-medium);
+  
   display: block;
   width: 100%;
   transform: rotate(10deg) translateY(80px);
@@ -822,8 +826,8 @@ strong {
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   color: var(--secondary-color);
-  text-transform: uppercase;
-  margin-bottom: 5px;
+  
+  margin-bottom: 7px;
 }
 
 
