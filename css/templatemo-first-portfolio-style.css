@@ -893,12 +893,27 @@ strong {
 
 
 
+.projects-popup-thumb {
+  background: var(--section-bg-color);
+  border: 2px solid var(--white-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  transition: all ease 0.5s;
+}
+
+
+
 
 #eardoorPopup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: fit-content;
 }
 /*---------------------------------------
   CONTACT              

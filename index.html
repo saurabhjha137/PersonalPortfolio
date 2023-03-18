@@ -30,6 +30,9 @@
         <link href="css/magnific-popup.css" rel="stylesheet">
 
         <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+
+        <!--test for buton in popup-->
+        <link href="css/test.css" rel="stylesheet">
         
 <!--
 
@@ -484,39 +487,61 @@ https://templatemo.com/tm-578-first-portfolio
                                 </i>
                                 
                                 <br>
+                               
+                                <div class="col-lg-5 col-md-1 col-12">
+                                    <a class="customm-btn btn customm-link bi bi-github  align-items-center" href="https://github.com/saurabhjha137"> 
+                                        <span>&nbsp; Code Preview</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-7 col-md-1 col-12">
+                                    <a class="customm-btn btn customm-link bi bi-linkedin  align-items-center" href="https://www.linkedin.com/in/saurabhjha137">
+                                        <span> &nbsp; Live Demo</span>
+                                    </a>
+                                </div>
                                 
+
                                 <a class="popup-with-form" href="#eardoorPopup">
                                     <img src="images/image-upload-concept-illustration/EarnDoorImage.jpg" class="projects-image img-fluid" alt="">
                                 </a>
                                 
-                                <!-- form itself -->
+                                <!-- Earndoor Popup -->
+
                                 <div id="eardoorPopup" class="mfp-hide">
-                                    <div class="row align-items-center" style="width: fit-content;">
-                                        <div class="projects-thumb">
-                                            <div class="projects-info">
-                                                <small class="projects-tag">Admin Portal</small>
+                                    <div class="row projects-popup-thumb" >
+                                        
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Admin Portal</small>
 
-                                                <h3 class="projects-title">FEMSY</h3>
-                                            </div>
-
-                                            <i class="d-lg-flex custom-btn custom-border-btn btn mt-3" style="max-width: fit-content;">
-                                                    
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" style="height:7vh; width: 7vh;"  alt="" >
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height:7vh; width: 7vh;"  alt="" >
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
-                                                
-                                            </i>
-                                            
-                                            <br>
-
-                                            <a >
-                                                <img src="images/image-upload-concept-illustration/femsy.png" class="projects-image img-fluid" alt=""  >
-                                            </a>
+                                            <h3 class="projects-title">FEMSY</h3>
                                         </div>
+
+                                        <i class="d-lg-flex custom-btn custom-border-btn btn mt-3" style="width: fit-content;">
+                                                
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" style="height:7vh; width: 7vh;"  alt="" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height:7vh; width: 7vh;"  alt="" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
+                                            
+                                        </i>
+                                            
+                                        <div class="row justify-content-between align-items-center">
+                                            <div class="col-lg-5 col-md-1 col-12">
+                                                <a class="custom-btn btn custom-link bi bi-github  align-items-center" href="https://github.com/saurabhjha137"> 
+                                                    <span>&nbsp; Code Preview</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-7 col-md-1 col-12">
+                                                <a class="custom-btn btn custom-link bi bi-linkedin  align-items-center" href="https://www.linkedin.com/in/saurabhjha137">
+                                                    <span> &nbsp; Live Demo</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                            
+                                        
                                     </div>
                                 </div>
+                                <!-- Earndoor Popup -->
 
 
 
@@ -760,7 +785,26 @@ https://templatemo.com/tm-578-first-portfolio
             </div>
         </footer>
 
+        <button id="primary-btn">Apply Button Color</button>
+        <button id="secondary-btn">Revert Color Change</button>
+
         <!-- JAVASCRIPT FILES -->
+
+        <script>
+            const root = document.querySelector(":root");
+            const primaryBtn = document.querySelector("#primary-btn");
+            const secondaryBtn = document.querySelector("#secondary-btn");
+
+            primaryBtn.addEventListener("click", function() {
+            root.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
+            root.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
+            });
+
+            secondaryBtn.addEventListener("click", function() {
+                root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
+                root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+            });
+        </script>
         
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

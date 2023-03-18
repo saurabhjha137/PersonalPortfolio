@@ -1,0 +1,52 @@
+.customm-btn {
+    background: #4e92cc;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-weight: var(--font-weight-bold);
+    padding: 12px 24px;
+  }
+  
+  .customm-btn:hover {
+    background: #ffa25c;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    color: var(--white-color);
+  }
+
+  .customm-border-btn {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--p-color);
+  }
+  
+  .customm-border-btn:hover {
+    background: #4e92cc;
+    border-color: #4e92cc;
+    color: var(--white-color);
+  }
+  
+  .customm-link {
+      background-color:#ffa25c;
+  }
+  
+  .customm-link:hover {
+      background-color: #4e92cc;
+  }
+  
+
+
+
+
+
+
+  button {
+    border-radius: var(--border-radius-large);
+    font-weight: var(--font-weight-bold);
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ffa25c, #4e92cc);
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+    background: linear-gradient(to right, #ffa25c, #4e92cc);
+}
