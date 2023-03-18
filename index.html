@@ -32,6 +32,9 @@
         <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
 
         <!--test for buton in popup-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-cXMWRaXYT32tsNCE3q0JmtC2Q0gFHXNvjJQyE17ByzO16Ofl+vI6U1xIneyKdbUIpHm6BquAnXT0IIZuFF05aA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
         <link href="css/test.css" rel="stylesheet">
         
 <!--
@@ -488,18 +491,6 @@ https://templatemo.com/tm-578-first-portfolio
                                 
                                 <br>
                                
-                                <div class="col-lg-5 col-md-1 col-12">
-                                    <a class="customm-btn btn customm-link bi bi-github  align-items-center" href="https://github.com/saurabhjha137"> 
-                                        <span>&nbsp; Code Preview</span>
-                                    </a>
-                                </div>
-                                <div class="col-lg-7 col-md-1 col-12">
-                                    <a class="customm-btn btn customm-link bi bi-linkedin  align-items-center" href="https://www.linkedin.com/in/saurabhjha137">
-                                        <span> &nbsp; Live Demo</span>
-                                    </a>
-                                </div>
-                                
-
                                 <a class="popup-with-form" href="#eardoorPopup">
                                     <img src="images/image-upload-concept-illustration/EarnDoorImage.jpg" class="projects-image img-fluid" alt="">
                                 </a>
@@ -511,31 +502,60 @@ https://templatemo.com/tm-578-first-portfolio
                                         
                                         <div class="projects-info">
                                             <small class="projects-tag">Admin Portal</small>
-
-                                            <h3 class="projects-title">FEMSY</h3>
+                                            <div class="row">
+                                                <div class="align-items-center col-lg-3 col-10 d-flex">
+                                                    <h3 class="projects-title">FEMSY</h3>
+                                                </div>
+                                                <div class="col-lg-7 col-10 d-flex" style="padding-bottom: 30px;">
+                                                    <i class="d-lg-flex custom-btn custom-border-btn btn mt-3" style="width: fit-content;">
+                                                
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" style="height:7vh; width: 7vh;"  alt="" >
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height:7vh; width: 7vh;"  alt="" >
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
+                                                        
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
 
-                                        <i class="d-lg-flex custom-btn custom-border-btn btn mt-3" style="width: fit-content;">
-                                                
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" style="height:7vh; width: 7vh;"  alt="" >
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height:7vh; width: 7vh;"  alt="" >
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" style="height:7vh; width: 7vh;" alt="" >
-                                            
-                                        </i>
-                                            
-                                        <div class="row justify-content-between align-items-center">
-                                            <div class="col-lg-5 col-md-1 col-12">
-                                                <a class="custom-btn btn custom-link bi bi-github  align-items-center" href="https://github.com/saurabhjha137"> 
-                                                    <span>&nbsp; Code Preview</span>
-                                                </a>
+                                        <div class="display-flex">
+                                            <p class="ms-4 mb-0"> <span><i class="bi bi-circle-fill" style="font-size: 0.5em;"></i></span>&nbsp Lead a team of 5 to develop a microsite <a href="https://gem.dlink.co.in/" target="_blank"  style="text-decoration: underline; text-decoration-color: #535da1;"><i class="bi bi-link" ></i> D-Link Government E-Marketplace</a> and an
+                                                admin panel using MySQL and BootStrap framework for D-Link India's 1000+ Resellers.
+                                                <br>
+                                                <span><i class="bi bi-circle-fill" style="font-size: 0.5em;"></i></span>&nbsp Reduced the search time by 60% to find a product listed on the website, by deploying a
+                                                QnA Chatbot using Python/GTTS. 
+                                            </p>
+                                        </div>
+
+                                        <div class="image-container">
+                                            <a>
+                                              <img src="images/image-upload-concept-illustration/EarnDoorImage.jpg" class="img-fluid" style=" width: 40vh; height: 40vh;" alt="">
+                                            </a>
+                                            <div class="preview-icon">
+                                              <i class="bi bi-images"></i>
                                             </div>
-                                            <div class="col-lg-7 col-md-1 col-12">
-                                                <a class="custom-btn btn custom-link bi bi-linkedin  align-items-center" href="https://www.linkedin.com/in/saurabhjha137">
-                                                    <span> &nbsp; Live Demo</span>
-                                                </a>
+                                            <div id="preview-modal">
+                                              <div class="preview-images">
+                                                <img src="images/image-upload-concept-illustration/AxisImage.jpg" alt="">
+                                                <img src="images/image-upload-concept-illustration/scaler.webp" alt="">
+                                                <img src="images/image-upload-concept-illustration/kvlogo.png" alt="">
+                                              </div>
                                             </div>
+                                        </div>
+                                          
+
+                                        <div class="col-lg-5 col-md-1 col-12">
+                                            <a class="customm-btn btn customm-link bi bi-github  align-items-center" href="https://github.com/saurabhjha137"> 
+                                                <span>&nbsp; Code Preview</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-7 col-md-1 col-12">
+                                            <a class="customm-btn btn customm-link bi bi-linkedin  align-items-center" href="https://www.linkedin.com/in/saurabhjha137">
+                                                <span> &nbsp; Live Demo</span>
+                                            </a>
                                         </div>
                                             
                                         
@@ -785,8 +805,8 @@ https://templatemo.com/tm-578-first-portfolio
             </div>
         </footer>
 
-        <button id="primary-btn">Apply Button Color</button>
-        <button id="secondary-btn">Revert Color Change</button>
+        <button class="buttonn" id="primary-btn">Apply Button Color</button>
+        <button class="buttonn" id="secondary-btn">Revert Color Change</button>
 
         <!-- JAVASCRIPT FILES -->
 
@@ -804,9 +824,31 @@ https://templatemo.com/tm-578-first-portfolio
                 root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
                 root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
             });
+
+            
+
+
         </script>
+
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.preview-icon').click(function(e) {
+                e.preventDefault();
+                $('#preview-modal').fadeIn();
+                });
+
+                $('#preview-modal').click(function() {
+                $(this).fadeOut();
+                });
+            });
+        </script>
+
+
         
         <script src="js/jquery.min.js"></script>
+        
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>

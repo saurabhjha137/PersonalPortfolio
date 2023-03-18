@@ -877,7 +877,9 @@ strong {
   width: 100%;
   transform: rotate(10deg) translateY(80px);
   transition: all ease 0.5s;
+  position: relative;
 }
+
 
 .projects-title {
   margin-bottom: 20px;
