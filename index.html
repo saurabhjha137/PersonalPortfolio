@@ -69,12 +69,9 @@ https://templatemo.com/tm-578-first-portfolio
                     <a class="custom-btn btn" href="https://drive.google.com/file/d/1aGcJpHkNXfTaae4WIfBYM1xcaPkCIsCp/view?usp=sharing" target="_blank">
                         Resume
                     </a>
-                    <div class="toggle-wrapper">
-                        <label class="switch">
-                          <input type="checkbox" id="dark-mode-toggle">
-                          <span class="slider round"></span>
-                        </label>
-                        <span id="dark-mode-text">Dark Mode</span>
+                    <div class="toggle-wrapper custom-btn">
+                        <a class="theme-mode-icon bi bi-moon me-3"></a>
+                        <span id="theme-mode-text">Dark</span>
                     </div>
                 </div>
 
@@ -112,8 +109,8 @@ https://templatemo.com/tm-578-first-portfolio
                         <a class="custom-btn btn" href="https://drive.google.com/file/d/1aGcJpHkNXfTaae4WIfBYM1xcaPkCIsCp/view?usp=sharing" target="_blank">
                             Resume
                         </a>
-                        <div class="toggle-wrapper">
-                            <a class="navbar-icon custom-btn bi bi-moon me-3"></a>
+                        <div class="toggle-wrapper custom-btn">
+                            <a class="theme-mode-icon bi bi-moon me-3"></a>
                             <span id="theme-mode-text">Dark</span>
                         </div>
                     </div>
@@ -822,46 +819,35 @@ https://templatemo.com/tm-578-first-portfolio
         <!-- JAVASCRIPT FILES -->
 
         <script>
-            const root = document.querySelector(':root');
-            const toggleSwitch = document.querySelector('#dark-mode-toggle');
-            const darkModeText = document.querySelector('#dark-mode-text');
-            let currentTheme = 'light';
+            
+            const root = document.querySelector(":root");
+            const toggleWrapper = document.querySelector('.toggle-wrapper');
+            let currentTheme = "dark";
 
-            function switchTheme() {
-            if (toggleSwitch.checked) {
-                darkModeText.textContent = 'Dark Mode';
-                changeColors('dark');
-            } else {
-                darkModeText.textContent = 'Light Mode';
-                changeColors('light');
-            }
-            }
+            toggleWrapper.addEventListener("click", function () {
+                if (currentTheme === 'light') {
+                    root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
+                    root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+                    currentTheme = 'dark';
+                    document.querySelector("#theme-mode-text").textContent = "Dark";
+                    document.querySelector(".theme-mode-icon").classList.remove("bi-sun");
+                    document.querySelector(".theme-mode-icon").classList.add("bi-moon");
+                } else {
+                    root.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
+                    root.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
+            
+                    currentTheme = "light";
+                    document.querySelector("#theme-mode-text").textContent = "Light";
+                    document.querySelector(".theme-mode-icon").classList.remove("bi-moon");
+                    document.querySelector(".theme-mode-icon").classList.add("bi-sun");
+                }
+            });
 
-            function changeColors(theme) {
-            if (theme === 'dark') {
-                root.style.setProperty('--primary-color', '#535da1');
-                root.style.setProperty('--secondary-color', '#14B789');
-                currentTheme = theme;
-            } else {
-                root.style.setProperty('--primary-color', '#4e92cc');
-                root.style.setProperty('--secondary-color', '#ffa25c');
-                currentTheme = theme;
-            }
-            }
 
-            toggleSwitch.addEventListener('change', switchTheme, false);
 
-            if (currentTheme) {
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-                switchTheme();
-            }
-            }
+
 
         </script>
-
-
-
 
         <script>
 
@@ -879,6 +865,10 @@ https://templatemo.com/tm-578-first-portfolio
                 rooot.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
             });
 
+
+
+
+            
         </script>
 
         
