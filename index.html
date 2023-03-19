@@ -69,6 +69,13 @@ https://templatemo.com/tm-578-first-portfolio
                     <a class="custom-btn btn" href="https://drive.google.com/file/d/1aGcJpHkNXfTaae4WIfBYM1xcaPkCIsCp/view?usp=sharing" target="_blank">
                         Resume
                     </a>
+                    <div class="toggle-wrapper">
+                        <label class="switch">
+                          <input type="checkbox" id="dark-mode-toggle">
+                          <span class="slider round"></span>
+                        </label>
+                        <span id="dark-mode-text">Dark Mode</span>
+                    </div>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -83,7 +90,7 @@ https://templatemo.com/tm-578-first-portfolio
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_education" style="font-size: 2.2vh;">Education/Skills</a>
+                            <a class="nav-link click-scroll" href="#section_education" style="font-size: 2.2vh;">Education Skills</a>
                         </li>
 
                         <li class="nav-item">
@@ -101,10 +108,14 @@ https://templatemo.com/tm-578-first-portfolio
 
                     <div class="d-lg-flex align-items-center d-none ms-auto">
                         <a class="navbar-icon bi-envelope-fill me-3"  href="mailto:saurabhjha137@gmail.com"></a>
-                        <a  class="navbar-icon bi-whatsapp me-3"href="https://wa.me/+918155030189"></a>
+                        <a class="navbar-icon bi-whatsapp me-3"href="https://wa.me/+918155030189"></a>
                         <a class="custom-btn btn" href="https://drive.google.com/file/d/1aGcJpHkNXfTaae4WIfBYM1xcaPkCIsCp/view?usp=sharing" target="_blank">
                             Resume
                         </a>
+                        <div class="toggle-wrapper">
+                            <a class="navbar-icon custom-btn bi bi-moon me-3"></a>
+                            <span id="theme-mode-text">Dark</span>
+                        </div>
                     </div>
                 </div>
 
@@ -811,25 +822,66 @@ https://templatemo.com/tm-578-first-portfolio
         <!-- JAVASCRIPT FILES -->
 
         <script>
-            const root = document.querySelector(":root");
+            const root = document.querySelector(':root');
+            const toggleSwitch = document.querySelector('#dark-mode-toggle');
+            const darkModeText = document.querySelector('#dark-mode-text');
+            let currentTheme = 'light';
+
+            function switchTheme() {
+            if (toggleSwitch.checked) {
+                darkModeText.textContent = 'Dark Mode';
+                changeColors('dark');
+            } else {
+                darkModeText.textContent = 'Light Mode';
+                changeColors('light');
+            }
+            }
+
+            function changeColors(theme) {
+            if (theme === 'dark') {
+                root.style.setProperty('--primary-color', '#535da1');
+                root.style.setProperty('--secondary-color', '#14B789');
+                currentTheme = theme;
+            } else {
+                root.style.setProperty('--primary-color', '#4e92cc');
+                root.style.setProperty('--secondary-color', '#ffa25c');
+                currentTheme = theme;
+            }
+            }
+
+            toggleSwitch.addEventListener('change', switchTheme, false);
+
+            if (currentTheme) {
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+                switchTheme();
+            }
+            }
+
+        </script>
+
+
+
+
+        <script>
+
+            const rooot = document.querySelector(":root");
             const primaryBtn = document.querySelector("#primary-btn");
             const secondaryBtn = document.querySelector("#secondary-btn");
 
             primaryBtn.addEventListener("click", function() {
-            root.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
-            root.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
+            rooot.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
+            rooot.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
             });
 
             secondaryBtn.addEventListener("click", function() {
-                root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
-                root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+                rooot.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
+                rooot.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
             });
-
-            
-
 
         </script>
 
+        
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
