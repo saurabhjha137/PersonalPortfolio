@@ -71,6 +71,68 @@ input:checked + .slider:before {
 
 
 
+.projects-popup-image {
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--primary-color);
+    display: block;
+    width: 30vh;
+    height: inherit;
+    transition: all ease 0.5s;
+    position: relative;
+  }
+
+  #eardoorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+  #axisPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+  #quintetPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+  #helpiPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+   #momsbazarPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+   #femsyPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+
+
+
+
+
 
 
 
@@ -81,6 +143,7 @@ input:checked + .slider:before {
     color: var(--white-color);
     font-weight: var(--font-weight-bold);
     padding: 12px 24px;
+    width: max-content;
   }
   
   .customm-btn:hover {
