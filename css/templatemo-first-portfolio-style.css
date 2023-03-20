@@ -1093,15 +1093,13 @@ strong {
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
-.social-icon {
-  margin: 0;
-  padding: 0;
-}
+
 
 .social-icon-item {
   list-style: none;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
+  
 }
 
 .social-icon-link {
@@ -1112,11 +1110,14 @@ strong {
   display: inline-block;
   vertical-align: top;
   margin: 2px 2px 5px 2px;
-  width: 40px;
-  height: 40px;
+  width: 10vh;
+  height: 10vh;
   line-height: 40px;
   text-align: center;
 }
+
+
+
 
 .social-icon-link:hover {
   background: var(--secondary-color);
