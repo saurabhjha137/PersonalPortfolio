@@ -69,10 +69,10 @@ https://templatemo.com/tm-578-first-portfolio
                     <a class="custom-btn btn" href="https://drive.google.com/file/d/1aGcJpHkNXfTaae4WIfBYM1xcaPkCIsCp/view?usp=sharing" target="_blank">
                         Resume
                     </a>
-                    <div class="toggle-wrapper custom-btn">
-                        <a class="theme-mode-icon bi bi-moon me-3"></a>
-                        <span id="theme-mode-text">Dark</span>
-                    </div>
+                    <button id="theme-mode-mobile-view" class="toggle-wrapper custom-btn">
+                        <i id="theme-mode-icon-mobile" class="bi bi-moon me-2"></i>
+                        <span id="theme-mode-text-mobile">Dark</span>
+                    </button>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -103,16 +103,18 @@ https://templatemo.com/tm-578-first-portfolio
                         </li>
                     </ul>
 
-                    <div class="d-lg-flex align-items-center d-none ms-auto">
+                    <div class="d-lg-flex align-items-center  ms-auto">
                         <a class="navbar-icon bi-envelope-fill me-3"  href="mailto:saurabhjha137@gmail.com"></a>
                         <a class="navbar-icon bi-whatsapp me-3"href="https://wa.me/+918155030189"></a>
                         <a class="custom-btn btn" href="https://drive.google.com/file/d/1aGcJpHkNXfTaae4WIfBYM1xcaPkCIsCp/view?usp=sharing" target="_blank">
                             Resume
                         </a>
-                        <div class="toggle-wrapper custom-btn">
-                            <a class="theme-mode-icon bi bi-moon me-3"></a>
+                        
+                        <button id="theme-mode" class="toggle-wrapper custom-btn">
+                            <i id="theme-mode-icon" class="bi bi-moon me-2"></i>
                             <span id="theme-mode-text">Dark</span>
-                        </div>
+                        </button>
+                    
                     </div>
                 </div>
 
@@ -821,32 +823,61 @@ https://templatemo.com/tm-578-first-portfolio
         <script>
             
             const root = document.querySelector(":root");
-            const toggleWrapper = document.querySelector('.toggle-wrapper');
+            const themeMode = document.querySelector("#theme-mode");
+            const themeModeMobileView = document.querySelector("#theme-mode-mobile-view");
+            const path = document.querySelector("path");
             let currentTheme = "dark";
 
-            toggleWrapper.addEventListener("click", function () {
-                if (currentTheme === 'light') {
+            themeMode.addEventListener("click", function () {
+                if (currentTheme === "light") {
                     root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
                     root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
-                    currentTheme = 'dark';
+                    path.setAttribute('fill', '#535da1');
+                    
+                    currentTheme = "dark";
                     document.querySelector("#theme-mode-text").textContent = "Dark";
-                    document.querySelector(".theme-mode-icon").classList.remove("bi-sun");
-                    document.querySelector(".theme-mode-icon").classList.add("bi-moon");
+                    document.querySelector("#theme-mode-icon").classList.remove("bi-sun");
+                    document.querySelector("#theme-mode-icon").classList.add("bi-moon");
+                } else {
+                    root.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to light blue
+                    root.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to orange
+                    root.style.setProperty("--white-color", "#000000");
+                    root.style.setProperty("--dark-color", "#ffffff");
+                    root.style.setProperty("--section-bg-color", "#000012");
+                    path.setAttribute('fill', '#4e92cc');
+
+                    currentTheme = "light";
+                    document.querySelector("#theme-mode-text").textContent = "Light";
+                    document.querySelector("#theme-mode-icon").classList.remove("bi-moon");
+                    document.querySelector("#theme-mode-icon").classList.add("bi-sun");
+                }
+                
+            });
+
+            themeModeMobileView.addEventListener("click", function () {
+                if (currentTheme === "light") {
+                    root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
+                    root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+                    path.setAttribute('fill', '#535da1');
+                    
+                    currentTheme = "dark";
+                    document.querySelector("#theme-mode-text-mobile").textContent = "Dark";
+                    document.querySelector("#theme-mode-icon-mobile").classList.remove("bi-sun");
+                    document.querySelector("#theme-mode-icon-mobile").classList.add("bi-moon");
                 } else {
                     root.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
                     root.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
-            
+                    path.setAttribute('fill', '#4e92cc');
+
                     currentTheme = "light";
-                    document.querySelector("#theme-mode-text").textContent = "Light";
-                    document.querySelector(".theme-mode-icon").classList.remove("bi-moon");
-                    document.querySelector(".theme-mode-icon").classList.add("bi-sun");
+                    document.querySelector("#theme-mode-text-mobile").textContent = "Light";
+                    document.querySelector("#theme-mode-icon-mobile").classList.remove("bi-moon");
+                    document.querySelector("#theme-mode-icon-mobile").classList.add("bi-sun");
                 }
+
             });
 
-
-
-
-
+            
         </script>
 
         <script>
