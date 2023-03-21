@@ -96,6 +96,8 @@ input:checked + .slider:before {
     width: fit-content;
   }
 
+  
+
   #axisPopup {
     position: fixed;
     top: 50%;
@@ -103,6 +105,8 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
     width: fit-content;
   }
+
+  
 
   #quintetPopup {
     position: fixed;
@@ -112,6 +116,7 @@ input:checked + .slider:before {
     width: fit-content;
   }
 
+  
   #helpiPopup {
     position: fixed;
     top: 50%;
@@ -120,6 +125,7 @@ input:checked + .slider:before {
     width: fit-content;
   }
 
+  
    #momsbazarPopup {
     position: fixed;
     top: 50%;
@@ -128,6 +134,7 @@ input:checked + .slider:before {
     width: fit-content;
   }
 
+  
    #femsyPopup {
     position: fixed;
     top: 50%;
@@ -136,6 +143,7 @@ input:checked + .slider:before {
     width: fit-content;
   }
 
+ 
 
 
 
@@ -263,4 +271,66 @@ input:checked + .slider:before {
 .buttonn:hover {
     opacity: 0.8;
     background: linear-gradient(to right, #ffa25c, #4e92cc);
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 700px) {
+
+
+
+  #earndoorPopup * {
+       
+    width: fit-content;
+    font-size: 80%;
+  }
+
+  
+
+  #axisPopup * {
+       
+    width: fit-content;
+    font-size: 80%;
+  }
+
+  
+
+  #quintetPopup * {
+       
+    width: fit-content;
+    font-size: 80%;
+  }
+
+  
+  #helpiPopup * {
+       
+    width: fit-content;
+    font-size: 80%;
+  }
+
+  
+   #momsbazarPopup * {
+       
+    width: fit-content;
+    font-size: 80%;
+  }
+
+  
+   #femsyPopup * {
+       
+    width: fit-content;
+    font-size: 80%;
+  }
+
+
 }
