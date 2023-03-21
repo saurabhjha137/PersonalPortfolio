@@ -77,7 +77,7 @@ input:checked + .slider:before {
     display: block;
     width: 100px;
     height: 100px;
-    max-width: 200px;
+    
     transition: all ease 0.5s;
     position: relative;
   }

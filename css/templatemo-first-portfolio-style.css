@@ -614,6 +614,14 @@ strong {
 
 
 
+.clients-item {
+  display: inline-block;
+  width: 14.28%; /* 100/7 */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 
 .clients-item-height {
 	height: 20vh;
@@ -623,7 +631,6 @@ strong {
 .clients-image {
   display: block;
   max-width: 80px;
-  
   margin: auto;
   transition: all ease 0.2s;
 }
