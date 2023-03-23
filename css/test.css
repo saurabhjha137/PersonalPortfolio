@@ -288,6 +288,47 @@ input:checked + .slider:before {
 @media screen and (max-width: 700px) {
 
 
+  .education-thumb {
+    background:var(--white-color);
+    border: 4px solid var(--primary-color);
+    border-radius: var(--border-radius-medium);
+    position: relative;
+    overflow: hidden;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 2px;
+    padding-left: 2px;
+    transition: all ease 0.5s;
+  }
+
+  .education-image {
+    border-radius: var(--border-radius-medium);
+    width: 6vh;
+    height: 6vh;
+    margin-bottom: 3vh;
+    margin-top: 2vh ;
+    
+  }
+
+  .education-title {
+    font-size: 2.5vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh ;
+    padding-left: 1vh;
+    
+  }
+  
+  .education-tag {
+    
+    font-size: 2vh;
+    color: var(--secondary-color);
+    
+    margin-bottom: 3vh;
+    margin-top: 2vh ;
+    
+  }
+
+  
 
   #earndoorPopup * {
        

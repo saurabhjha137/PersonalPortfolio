@@ -230,12 +230,12 @@ strong {
 }
 
 .is-sticky .navbar-icon {
-  background: var(--secondary-color);
+  background: var(--white-color);
   color: var(--white-color);
 }
 
 .form-check-icon {
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 
@@ -252,13 +252,13 @@ strong {
   background: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--white-color);
-  color: var(--white-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
   padding: 8px 22px;
 }
 
 .navbar .custom-btn:hover {
-  background: var(--white-color);
+  background: var(--secondary-color);
   border-color: transparent;
   color: var(--secondary-color);
 }
@@ -274,7 +274,7 @@ strong {
 .custom-btn:hover {
   background: var(--primary-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-  color: var(--white-color);
+  color: var(--secondary-color);
 }
 
 .custom-border-btn {
@@ -736,7 +736,7 @@ strong {
 -----------------------------------------*/
 .education-thumb {
   background:var(--white-color);
-  border: 4px solid var(--dark-color);
+  border: 4px solid var(--primary-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -1205,7 +1205,7 @@ strong {
 
   .navbar-brand,
   .navbar-brand:hover {
-    color: var(--dark-color);
+    color: var(--secondary-color);
   }
 
   .navbar-icon {
@@ -1224,7 +1224,7 @@ strong {
   .navbar-toggler .navbar-toggler-icon,
   .navbar-toggler .navbar-toggler-icon:before,
   .navbar-toggler .navbar-toggler-icon:after {
-    background: var(--dark-color);
+    background: var(--secondary-color);
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -1232,7 +1232,7 @@ strong {
   }
 
   .navbar-nav .nav-link {
-    color: var(--p-color);
+    color: var(--secondary-color);
     padding-top: 10px;
     padding-bottom: 10px;
   }
