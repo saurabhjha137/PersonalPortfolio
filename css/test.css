@@ -290,8 +290,8 @@ input:checked + .slider:before {
 
 
   .education-thumb {
-    background:var(--white-color);
-    border: 4px solid var(--primary-color);
+    background:var(--new-white-color);
+    border: 6px solid var(--eduthumb-color);
     border-radius: var(--border-radius-medium);
     position: relative;
     overflow: hidden;

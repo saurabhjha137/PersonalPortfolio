@@ -449,6 +449,15 @@ strong {
   transform: rotate(-45deg);
 }
 
+.navbar-toggler-icon {
+  background-color: red;
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
 .navbar-toggler .navbar-toggler-icon {
   background: var(--new-white-color);
   transition: background 10ms 300ms ease;
@@ -810,11 +819,6 @@ strong {
 }
 
 
-
-.education-duration{
-  /*color: var(--eduDuration-color);*/
-}
-
 /*---------------------------------------
   PROJECTS              
 -----------------------------------------*/
@@ -1158,7 +1162,7 @@ strong {
   .navbar-toggler .navbar-toggler-icon,
   .navbar-toggler .navbar-toggler-icon:before,
   .navbar-toggler .navbar-toggler-icon:after {
-    background: var(--dark-color);
+    background: var(--new-dark-color);
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {

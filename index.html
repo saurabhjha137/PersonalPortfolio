@@ -415,7 +415,7 @@ https://templatemo.com/tm-578-first-portfolio
                                         
                                             <p>&nbsp
                                             
-
+                                        <br><br><br>
                                         <div class="services-icon-wrap d-flex justify-content-center align-items-center">
                                             <img class="d-flex" style="height: 43vh; width: 38.5vh; border-radius: 1.8vh;" src="images/image-upload-concept-illustration/vmconfig.jpg"></img>
                                         </div>
@@ -456,6 +456,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                                         <p>&nbsp
 
+                                            <br><br><br>
                                         <div class="services-icon-wrap d-flex justify-content-center align-items-center">
                                             <img class="d-flex"style="height: 43vh; width: 38.5vh; border-radius: 1.8vh;" src="images/image-upload-concept-illustration/chatbot.jpg"></img>
                                         </div>
@@ -1495,18 +1496,44 @@ change primary color to light blue and change secondary color to orange
 
             themeModeMobileView.addEventListener("click", function () {
                 if (currentTheme === "light") {
+
                     root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
                     root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
                     path.setAttribute('fill', '#535da1');
+                    root.style.setProperty("--white-color", "#ffffff");
+                    root.style.setProperty("--dark-color", " #000000");
+                    root.style.setProperty("--section-bg-color", "#f9f9f9");
+                    root.style.setProperty("--p-color", "#717275");
+                    root.style.setProperty("--border-color", "#e9eaeb");
+                    root.style.setProperty("--new-white-color", "#ffffff");
+                    root.style.setProperty("--new-dark-color", "#000000");
+                    root.style.setProperty("--new-serviceThumb-color", "#ffffff");
+                    root.style.setProperty("--eduthumb-color","#000000");
+                    root.style.setProperty("--eduDuration-color","--primary-color");
+                    root.style.setProperty("--projectThumb-bg-color", "--section-bg-color");
+
                     
                     currentTheme = "dark";
-                    document.querySelector("#theme-mode-text-mobile").textContent = "Dark";
-                    document.querySelector("#theme-mode-icon-mobile").classList.remove("bi-sun");
-                    document.querySelector("#theme-mode-icon-mobile").classList.add("bi-moon");
+                    document.querySelector("#theme-mode-text").textContent = "Dark";
+                    document.querySelector("#theme-mode-icon").classList.remove("bi-sun");
+                    document.querySelector("#theme-mode-icon").classList.add("bi-moon");
+
                 } else {
-                    root.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
-                    root.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
-                    path.setAttribute('fill', '#4e92cc');
+
+                    root.style.setProperty("--primary-color",  "#132743"); // change primary color to light blue
+                    root.style.setProperty("--secondary-color", "#980F5A"); // change secondary color to orange
+                    path.setAttribute('fill', "#132743");
+                    root.style.setProperty("--white-color", "#132743");
+                    root.style.setProperty("--dark-color", "#F8EFD4");
+                    root.style.setProperty("--p-color", "#F8EFD4");
+                    root.style.setProperty("--new-dark-color", "#980F5A");
+                    root.style.setProperty("--new-white-color", "#F8EFD4");
+                    root.style.setProperty("--section-bg-color", "#132743");
+                    root.style.setProperty("--border-color", "#BBE1FA");
+                    root.style.setProperty("--new-serviceThumb-color", "#980F5A");
+                    root.style.setProperty("--eduthumb-color","#BBE1FA");
+                    root.style.setProperty("--eduDuration-color","#BBE1FA");
+                    root.style.setProperty("--projectThumb-bg-color", "#F8EFD4");
 
                     currentTheme = "light";
                     document.querySelector("#theme-mode-text-mobile").textContent = "Light";
@@ -1526,13 +1553,56 @@ change primary color to light blue and change secondary color to orange
             const secondaryBtn = document.querySelector("#secondary-btn");
 
             primaryBtn.addEventListener("click", function() {
-            rooot.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
-            rooot.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
+                root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
+                root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+                path.setAttribute('fill', '#535da1');
+                root.style.setProperty("--white-color", "#ffffff");
+                root.style.setProperty("--dark-color", " #000000");
+                root.style.setProperty("--section-bg-color", "#f9f9f9");
+                root.style.setProperty("--p-color", "#717275");
+                root.style.setProperty("--border-color", "#e9eaeb");
+                root.style.setProperty("--new-white-color", "#ffffff");
+                root.style.setProperty("--new-dark-color", "#000000");
+                root.style.setProperty("--new-serviceThumb-color", "#ffffff");
+                root.style.setProperty("--eduthumb-color","#000000");
+                root.style.setProperty("--eduDuration-color","--primary-color");
+                root.style.setProperty("--projectThumb-bg-color", "--section-bg-color");
+
+                
+                currentTheme = "dark";
+                document.querySelector("#theme-mode-text").textContent = "Dark";
+                document.querySelector("#theme-mode-icon").classList.remove("bi-sun");
+                document.querySelector("#theme-mode-icon").classList.add("bi-moon");
+
+                rooot.style.setProperty("--primary-color",  "#4e92cc"); // change primary color to red
+                rooot.style.setProperty("--secondary-color", "#ffa25c"); // change secondary color to green
+
             });
 
             secondaryBtn.addEventListener("click", function() {
-                rooot.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
-                rooot.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+                root.style.setProperty( "--primary-color", "#535da1"); // change primary color to original
+                
+                root.style.setProperty( "--secondary-color", "#14B789"); // change secondary color to  original
+                path.setAttribute('fill', '#535da1');
+                root.style.setProperty("--white-color", "#ffffff");
+                root.style.setProperty("--dark-color", " #000000");
+                root.style.setProperty("--section-bg-color", "#f9f9f9");
+                root.style.setProperty("--p-color", "#717275");
+                root.style.setProperty("--border-color", "#e9eaeb");
+                root.style.setProperty("--new-white-color", "#ffffff");
+                root.style.setProperty("--new-dark-color", "#000000");
+                root.style.setProperty("--new-serviceThumb-color", "#ffffff");
+                root.style.setProperty("--eduthumb-color","#000000");
+                root.style.setProperty("--eduDuration-color","--primary-color");
+                root.style.setProperty("--projectThumb-bg-color", "--section-bg-color");
+
+                
+                currentTheme = "dark";
+                document.querySelector("#theme-mode-text").textContent = "Dark";
+                document.querySelector("#theme-mode-icon").classList.remove("bi-sun");
+                document.querySelector("#theme-mode-icon").classList.add("bi-moon");
+    
+            
             });
 
 
