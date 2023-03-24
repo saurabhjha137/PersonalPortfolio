@@ -18,15 +18,17 @@ https://templatemo.com/tm-578-first-portfolio
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #e9eaeb;
-  --featured-border-color:        #727aab;
   
  /*new colors*/
- --new-primary-color:            #150E56;
  --new-white-color:              #ffffff;
- --new-p-color:                  rgb(255, 210, 62);
+ --new-p-color:                  #D89216;
  --new-secondary-color:          #14B789;
- --new-dark-color:               #000000;
+ --new-dark-color:               var(--dark-color);
  --new-featured-border-color:    #727aab;
+ --new-serviceThumb-color:       #ffffff;
+ --eduthumb-color:               var(--dark-color);
+ --eduDuration-color: var(--primary-color);
+ --projectThumb-bg-color: var(--section-bg-color);
  
 
 
@@ -147,6 +149,11 @@ a:hover {
 .section-padding {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.client-section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 b,
@@ -377,7 +384,7 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--section-bg-color);
+  color: var(--new-p-color);
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -621,7 +628,10 @@ strong {
 /*---------------------------------------
   CLIENTS              
 -----------------------------------------*/
+.clients{
 
+  background: var(--new-white-color);
+}
 
 
 .clients-item {
@@ -661,7 +671,7 @@ strong {
 }
 
 .services-thumb {
-  background: var(--white-color);
+  background: var(--new-serviceThumb-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-medium);
   position: relative;
@@ -715,7 +725,7 @@ strong {
 }
 
 .services-price-wrap {
-  background: var(--primary-color);
+  background: var(--eduDuration-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -745,8 +755,8 @@ strong {
   Education              
 -----------------------------------------*/
 .education-thumb {
-  background:var(--white-color);
-  border: 4px solid var(--dark-color);
+  background:var(--new-white-color);
+  border: 6px solid var(--eduthumb-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
@@ -802,7 +812,7 @@ strong {
 
 
 .education-duration{
-  color: var(--primary-color);
+  /*color: var(--eduDuration-color);*/
 }
 
 /*---------------------------------------
@@ -867,7 +877,7 @@ strong {
 
 
 .projects-thumb {
-  background: var(--section-bg-color);
+  background: var(--projectThumb-bg-color);
   border: 2px solid var(--white-color);
   border-radius: var(--border-radius-medium);
   position: relative;
@@ -943,7 +953,7 @@ strong {
 }
 
 .contact-info {
-  background: var(--white-color);
+  background: var(--new-white-color);
   border-top-right-radius: var(--border-radius-small);
   border-bottom-right-radius: var(--border-radius-small);
   padding: 60px 30px 30px 30px;
@@ -972,10 +982,15 @@ strong {
 
 .site-footer-title {
   font-size: var(--menu-font-size);
-  color: var(--dark-color);
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
+.mailCall{
+
+  color: var(--new-dark-color);
+
+}
 .copyright-text-wrap p,
 .copyright-text {
   font-size: var(--copyright-font-size);
@@ -1039,7 +1054,7 @@ strong {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-large);
   font-size: var(--copyright-font-size);
-  color: var(--dark-color);
+  color: var(--primary-color);
   display: inline-block;
   vertical-align: top;
   margin: 10px 10px 15px 10px;

@@ -90,11 +90,11 @@ input:checked + .slider:before {
 
 
   #earndoorPopup {
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
+    position: fixed;
   }
 
   
@@ -332,7 +332,13 @@ input:checked + .slider:before {
   
 
   #earndoorPopup * {
-       
+    
+    
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    
     width: fit-content;
     font-size: 80%;
   }
@@ -341,6 +347,12 @@ input:checked + .slider:before {
 
   #axisPopup * {
        
+    
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    
     width: fit-content;
     font-size: 80%;
   }
@@ -349,6 +361,12 @@ input:checked + .slider:before {
 
   #quintetPopup * {
        
+    
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    
     width: fit-content;
     font-size: 80%;
   }
@@ -356,6 +374,12 @@ input:checked + .slider:before {
   
   #helpiPopup * {
        
+    
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    
     width: fit-content;
     font-size: 80%;
   }
@@ -363,6 +387,12 @@ input:checked + .slider:before {
   
    #momsbazarPopup * {
        
+    
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    
     width: fit-content;
     font-size: 80%;
   }
@@ -370,6 +400,12 @@ input:checked + .slider:before {
   
    #femsyPopup * {
        
+    
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    
     width: fit-content;
     font-size: 80%;
   }
